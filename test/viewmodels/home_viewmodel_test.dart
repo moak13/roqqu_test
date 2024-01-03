@@ -17,7 +17,7 @@ void main() {
     group('incrementCounter -', () {
       test('When called once should return  Counter is: 1', () {
         final model = getModel();
-        model.incrementCounter();
+        model.toggleTheme();
         expect(model.counterLabel, 'Counter is: 1');
       });
     });
