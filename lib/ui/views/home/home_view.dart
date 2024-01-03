@@ -34,9 +34,18 @@ class HomeView extends StackedView<HomeViewModel> {
                 MaterialButton(
                   color: Colors.black,
                   onPressed: viewModel.showBottomSheet,
-                  child: Text(
-                    viewModel.counterLabel,
-                    style: const TextStyle(color: Colors.white),
+                  child: const Text(
+                    'Show Sheet',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
+                verticalSpaceMedium,
+                MaterialButton(
+                  color: Colors.black,
+                  onPressed: viewModel.toggleTheme,
+                  child: const Text(
+                    'Toggle Theme',
+                    style: TextStyle(color: Colors.white),
                   ),
                 ),
               ],

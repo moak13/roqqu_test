@@ -9,10 +9,6 @@ class HomeViewModel extends BaseViewModel {
   final _bottomSheetService = locator<BottomSheetService>();
   final _themeService = locator<ThemeService>();
 
-  String get counterLabel => 'Counter is: $_counter';
-
-  int _counter = 0;
-
   void toggleTheme() {
     _themeService.toggleDarkLightTheme();
   }
